@@ -1,0 +1,171 @@
+<body>
+<div class="flex h-screen">
+  <div class="w-full">
+    <form (ngSubmit)="onFormSubmit()" [formGroup]="contactsForm" class="px-4">
+      <h1 class="py-10 font-extrabold text-5xl text-center ">
+        Geriatric Depression Scale
+      </h1>
+
+      <div class="disclaimer">
+        <h5>This form is designed to assess feelings of depression in older adults. Please check off the statements that apply to you to help us understand your emotional well-being. If more than 5 checkboxes are selected, it may indicate signs of depression. Your responses are confidential and will assist in providing the appropriate support.</h5>
+      </div>
+
+      <div class="mt-2">
+        <label for="firstName" class="font-bold">First Name:</label>
+        <input type="text" class="w-full p-2 border-2 rounded-sm mt-2" formControlName="firstName">
+      </div>
+
+      <div class="mt-2">
+        <label for="lastName" class="font-bold">Last Name:</label>
+        <input type="text" class="w-full p-2 border-2 rounded-sm mt-2" formControlName="lastName">
+      </div>
+
+      <div class="mt-2">
+        <label for="email" class="font-bold">Email:</label>
+        <input type="text" class="w-full p-2 border-2 rounded-sm mt-2" formControlName="email">
+      </div>
+
+      <div class="mt-2">
+        <label for="age" class="font-bold">Age:</label>
+        <input type="text" class="w-full p-2 border-2 rounded-sm mt-2" formControlName="age">
+      </div>
+
+      <div class="mt-6">
+        <label for="q1" class="flex items-center font-bold">
+          <span>1. Are you basically satisfied with your life? </span>
+          <input type="checkbox" formControlName ="q1" class="h-8 w-8 ml-auto">
+        </label>
+        
+      </div>
+
+      <div class="mt-6">
+        <label for="q2" class="flex items-center font-bold">
+          <span>2. Have you dropped many of your activities and interests?  </span>
+          <input type="checkbox" formControlName ="q2" class="h-8 w-8 ml-auto">
+        </label>
+        
+      </div>
+
+      <div class="mt-6">
+        <label for="q3" class="flex items-center font-bold">
+          <span>3. Do you feel that your life is empty? </span>
+          <input type="checkbox" formControlName ="q3" class="h-8 w-8 ml-auto">
+        </label>
+      </div>
+
+      <div class="mt-6">
+        <label for="q4" class="flex items-center font-bold">
+          <span>4. Do you often get bored? </span>
+          <input type="checkbox" formControlName ="q4" class="h-8 w-8 ml-auto">
+        </label>
+      </div>
+
+      <div class="mt-6">
+        <label for="q5" class="flex items-center font-bold">
+          <span>5. Are you in good spirits most of the time?</span>
+          <input type="checkbox" formControlName ="q5" class="h-8 w-8 ml-auto">
+        </label>
+      </div>
+
+      <div class="mt-6">
+        <label for="q6" class="flex items-center font-bold">
+          <span>6. Are you afraid that something bad is going to happen to you?  </span>
+          <input type="checkbox" formControlName ="q6" class="h-8 w-8 ml-auto">
+        </label>
+      </div>
+
+      <div class="mt-6">
+        <label for="q7" class="flex items-center font-bold">
+          <span>7. Do you feel happy most of the time? </span>
+          <input type="checkbox" formControlName ="q7" class="h-8 w-8 ml-auto">
+        </label>
+      </div>
+
+      <div class="mt-6">
+        <label for="q8" class="flex items-center font-bold">
+          <span>8. Do you often feel helpless?  </span>
+          <input type="checkbox" formControlName ="q8" class="h-8 w-8 ml-auto">
+        </label>
+      </div>
+
+      <div class="mt-6">
+        <label for="q9" class="flex items-center font-bold">
+          <span>9. Do you prefer to stay at home, rather than going out and doing things?  </span>
+          <input type="checkbox" formControlName ="q9" class="h-8 w-8 ml-auto">
+        </label>
+      </div>
+
+      <div class="mt-6">
+        <label for="q10" class="flex items-center font-bold">
+          <span>10. Do you feel that you have more problems with memory than most? </span>
+          <input type="checkbox" formControlName ="q10" class="h-8 w-8 ml-auto">
+        </label>
+      </div>
+
+      <div class="mt-6">
+        <label for="q11" class="flex items-center font-bold">
+          <span>11. Do you think it is wonderful to be alive now?</span>
+          <input type="checkbox" formControlName ="q11" class="h-8 w-8 ml-auto">
+        </label>
+      </div>
+
+      <div class="mt-6">
+        <label for="q12" class="flex items-center font-bold">
+          <span>12. Do you feel worthless the way you are now? </span>
+          <input type="checkbox" formControlName ="q12" class="h-8 w-8 ml-auto">
+        </label>
+      </div>
+
+      <div class="mt-6">
+        <label for="q13" class="flex items-center font-bold">
+          <span>13. Do you feel full of energy?  </span>
+          <input type="checkbox" formControlName ="q13" class="h-8 w-8 ml-auto">
+        </label>
+      </div>
+
+      <div class="mt-6">
+        <label for="q14" class="flex items-center font-bold">
+          <span>14. Do you feel that your situation is hopeless? </span>
+          <input type="checkbox" formControlName ="q14" class="h-8 w-8 ml-auto">
+        </label>
+      </div>
+
+      <div class="mt-6">
+        <label for="q15" class="flex items-center font-bold">
+          <span>15. Do you think that most people are better off than you are?  </span>
+          <input type="checkbox" formControlName ="q15" class="h-8 w-8 ml-auto">
+        </label>
+      </div>
+
+      <div class="mt-2">
+        <button type="submit" class="bg-slate-800 text-white px-4 py-2 rounded-sm w-full">Submit</button>
+      </div>
+
+      <div class="mt-2">
+        <button type="button" class="bg-slate-800 text-white px-4 py-2 rounded-sm w-full" (click)="onFormReset()">Reset</button>
+      </div>
+
+    </form>
+
+  </div>
+
+  <div class="overflow-auto w-[30%]">
+    <h3 class="py-10 font-bold text-2xl text-center ">
+      Help
+    </h3>
+
+    <div class="help-box">
+      <ul>
+          <li class="help-site"><a href="https://www.canada.ca/en/public-health/topics/mental-health-wellness.html" class="help-box" >Mental Health Canada</a></li>
+          <li class="help-site"><a href="https://www.nimh.nih.gov" class="help-box" target="_blank">National Institute of Mental Health</a></li>
+          <li class="help-site"><a href="https://www.crisistextline.org" class="help-box" target="_blank">Crisis Text Line</a></li>
+          <li class="help-site"><a href="https://988lifeline.org" class="help-box" target="_blank">Suicide & Crisis Lifeline</a></li>
+          <li class="help-site"><a href="https://www.samhsa.gov/find-help/national-helpline" class="help-box" target="_blank">SAMHSA Helpline</a></li>
+    </ul>
+  </div>
+  </div>
+ 
+
+</div>
+</body>
+<router-outlet></router-outlet>
